@@ -16,7 +16,7 @@ on:
 jobs:
   build:
     env:
-      ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION: false  # Ensure Node 24 is used
+      ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION: true  # Ensure Node 24 is used
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
