@@ -9,14 +9,13 @@ name: Java CI with Gradle
 
 on:
   push:
-    branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
+    branches: [ "feature/controller" ]
 
 jobs:
   build:
     env:
       ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION: true  # Ensure Node 24 is used
+
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
